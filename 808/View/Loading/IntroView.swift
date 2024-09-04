@@ -57,7 +57,7 @@ struct IntroView: View {
                 //MARK: - Navigation Button
                 Button(action: {
                     pageIndex += 1
-                    if pageIndex > pages.count {
+                    if pageIndex > pages.count - 1 {
                         isPresented = true
                         isFirstStart = false
                     }

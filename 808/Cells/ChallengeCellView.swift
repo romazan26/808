@@ -17,11 +17,13 @@ struct ChallengeCellView: View {
             Text(challenge.name ?? "")
                 .foregroundStyle(.white)
                 .font(.system(size: 17, weight: .bold))
-            CustomProgressBar(progress: Float(100 / challenge.day * challenge.dayEnd),
-                              width: 300,
-                              color: .green,
-                              secondColor: .gray.opacity(0.5))
+            if challenge.day != 0 {
+                CustomProgressBar(progress: Float(100 / challenge.day * challenge.dayEnd),
+                                  width: 300,
+                                  color: .green,
+                                  secondColor: .gray.opacity(0.5))
                 .padding(10)
+            }
         }
         .padding()
         .frame(maxWidth: .infinity)

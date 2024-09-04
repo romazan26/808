@@ -26,29 +26,60 @@ struct AddChallengeView: View {
                 VStack(alignment: .leading){
                     Text("Challenge name:")
                         .foregroundStyle(.white)
-                        .font(.system(size: 17, weight: .bold))
+                        .font(.system(size: 20, weight: .bold))
                     TextField("Enter the name of the challenge", text: $vm.simpleName)
+                        .foregroundStyle(.white)
                         .focused($keyboardIsFocused)
                         .padding()
                         .background {
                             Color.second.cornerRadius(16)
                         }
                     
-                }.padding(.top, 20)
+                }.padding(.top, 30)
                 
-                //MARK: - Day challenge
+                //MARK: - Choose day challenge
                 VStack{
-                    Button(action: {}, label: {
-                        /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Button(action: {vm.simpleDay = "10"}, label: {
+                        ChooseDayButtonView(vm: vm, level: "Easy", countDay: "10")
                     })
-                    Button(action: {}, label: {
-                        Text("Button")
+                    Button(action: {vm.simpleDay = "20"}, label: {
+                        ChooseDayButtonView(vm: vm, level: "Medium", countDay: "20")
                     })
-                    Button(action: {}, label: {
-                        /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+                    Button(action: {vm.simpleDay = "30"}, label: {
+                        ChooseDayButtonView(vm: vm, level: "Hard", countDay: "30")
                     })
-                }.padding(.top, 20)
+                }.padding(.top, 30)
+                
+                //MARK: - Choose emotion
+                VStack(alignment: .leading) {
+                    Text("Emotion:")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 20, weight: .bold))
+                    HStack(spacing: 15){
+                        Button(action: {vm.simpleEmotion = .challenge}, label: {
+                            EmotionChooseButton(emotion: .challenge, vm: vm)
+                        })
+                        Button(action: {vm.simpleEmotion = .badges}, label: {
+                            EmotionChooseButton(emotion: .badges, vm: vm)
+                        })
+                        Button(action: {vm.simpleEmotion = .diary}, label: {
+                            EmotionChooseButton(emotion: .diary, vm: vm)
+                        })
+                        Button(action: {vm.simpleEmotion = .star}, label: {
+                            EmotionChooseButton(emotion: .star, vm: vm)
+                        })
+                        Button(action: {vm.simpleEmotion = .setting}, label: {
+                            EmotionChooseButton(emotion: .setting, vm: vm)
+                        })
+                        Spacer()
+                    }
+                   
+                } .padding(.top, 30)
                 Spacer()
+                
+                Button(action: {vm.addChalleng()}, label: {
+                    BlueButtonView(text: "Save",image: "checkmark")
+                })
             }.padding()
         }
         .onTapGesture {

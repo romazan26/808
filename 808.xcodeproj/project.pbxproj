@@ -27,6 +27,15 @@
 		30C6BB5F2C8794720001282E /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB5E2C8794720001282E /* UIImageTransformer.swift */; };
 		30C6BB612C87949A0001282E /* Challeng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB602C87949A0001282E /* Challeng.swift */; };
 		30C6BB632C8799570001282E /* AddChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB622C8799570001282E /* AddChallengeView.swift */; };
+		30C6BB652C8834780001282E /* ChooseDayButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB642C8834780001282E /* ChooseDayButtonView.swift */; };
+		30C6BB672C883CC60001282E /* EnumEmotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB662C883CC60001282E /* EnumEmotion.swift */; };
+		30C6BB692C8843CE0001282E /* EmotionChooseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB682C8843CE0001282E /* EmotionChooseButton.swift */; };
+		30C6BB6B2C884BB30001282E /* ChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB6A2C884BB30001282E /* ChallengeView.swift */; };
+		30C6BB6D2C88D3DC0001282E /* ChallengesDayGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB6C2C88D3DC0001282E /* ChallengesDayGridView.swift */; };
+		30C6BB6F2C88E8AA0001282E /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB6E2C88E8AA0001282E /* CompletedView.swift */; };
+		30C6BB722C88F0990001282E /* BadgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB712C88F0990001282E /* BadgesView.swift */; };
+		30C6BB752C88F1C60001282E /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB742C88F1C60001282E /* Badges.swift */; };
+		30C6BB772C88FF9A0001282E /* BadgeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB762C88FF9A0001282E /* BadgeCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +60,15 @@
 		30C6BB5E2C8794720001282E /* UIImageTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
 		30C6BB602C87949A0001282E /* Challeng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challeng.swift; sourceTree = "<group>"; };
 		30C6BB622C8799570001282E /* AddChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChallengeView.swift; sourceTree = "<group>"; };
+		30C6BB642C8834780001282E /* ChooseDayButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDayButtonView.swift; sourceTree = "<group>"; };
+		30C6BB662C883CC60001282E /* EnumEmotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumEmotion.swift; sourceTree = "<group>"; };
+		30C6BB682C8843CE0001282E /* EmotionChooseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionChooseButton.swift; sourceTree = "<group>"; };
+		30C6BB6A2C884BB30001282E /* ChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeView.swift; sourceTree = "<group>"; };
+		30C6BB6C2C88D3DC0001282E /* ChallengesDayGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesDayGridView.swift; sourceTree = "<group>"; };
+		30C6BB6E2C88E8AA0001282E /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		30C6BB712C88F0990001282E /* BadgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesView.swift; sourceTree = "<group>"; };
+		30C6BB742C88F1C60001282E /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
+		30C6BB762C88FF9A0001282E /* BadgeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 		30C6BB2C2C872EEC0001282E /* 808 */ = {
 			isa = PBXGroup;
 			children = (
+				30C6BB732C88F1A80001282E /* Enums */,
 				30C6BB5B2C8792240001282E /* Cells */,
 				30C6BB562C8789910001282E /* ViewModels */,
 				30C6BB502C8788330001282E /* CoreData */,
@@ -106,6 +125,7 @@
 		30C6BB3B2C872F0F0001282E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30C6BB702C88F07A0001282E /* Badges */,
 				30C6BB4D2C87854A0001282E /* Challenges */,
 				30C6BB482C8738EF0001282E /* Main */,
 				30C6BB3C2C872F1B0001282E /* Loading */,
@@ -131,6 +151,9 @@
 				30C6BB462C8738BE0001282E /* BlueButtonView.swift */,
 				30C6BB4B2C8782030001282E /* OpenButtonView.swift */,
 				30C6BB592C8790040001282E /* EmptyChallengeView.swift */,
+				30C6BB642C8834780001282E /* ChooseDayButtonView.swift */,
+				30C6BB682C8843CE0001282E /* EmotionChooseButton.swift */,
+				30C6BB6C2C88D3DC0001282E /* ChallengesDayGridView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -148,6 +171,8 @@
 			children = (
 				30C6BB4E2C87856B0001282E /* ChallengesView.swift */,
 				30C6BB622C8799570001282E /* AddChallengeView.swift */,
+				30C6BB6A2C884BB30001282E /* ChallengeView.swift */,
+				30C6BB6E2C88E8AA0001282E /* CompletedView.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -175,8 +200,26 @@
 			isa = PBXGroup;
 			children = (
 				30C6BB5C2C8792400001282E /* ChallengeCellView.swift */,
+				30C6BB762C88FF9A0001282E /* BadgeCellView.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		30C6BB702C88F07A0001282E /* Badges */ = {
+			isa = PBXGroup;
+			children = (
+				30C6BB712C88F0990001282E /* BadgesView.swift */,
+			);
+			path = Badges;
+			sourceTree = "<group>";
+		};
+		30C6BB732C88F1A80001282E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				30C6BB662C883CC60001282E /* EnumEmotion.swift */,
+				30C6BB742C88F1C60001282E /* Badges.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,23 +293,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C6BB4F2C87856B0001282E /* ChallengesView.swift in Sources */,
+				30C6BB752C88F1C60001282E /* Badges.swift in Sources */,
 				30C6BB442C8738810001282E /* PageIntroView.swift in Sources */,
 				30C6BB612C87949A0001282E /* Challeng.swift in Sources */,
+				30C6BB722C88F0990001282E /* BadgesView.swift in Sources */,
 				30C6BB4A2C8738FA0001282E /* MainView.swift in Sources */,
 				30C6BB302C872EEC0001282E /* LoadingView.swift in Sources */,
 				30C6BB532C87885B0001282E /* 808.xcdatamodeld in Sources */,
+				30C6BB772C88FF9A0001282E /* BadgeCellView.swift in Sources */,
+				30C6BB652C8834780001282E /* ChooseDayButtonView.swift in Sources */,
 				30C6BB472C8738BE0001282E /* BlueButtonView.swift in Sources */,
 				30C6BB552C8789590001282E /* CoreDataManager.swift in Sources */,
 				30C6BB5F2C8794720001282E /* UIImageTransformer.swift in Sources */,
 				30C6BB432C8738810001282E /* PageIntroModel.swift in Sources */,
 				30C6BB5A2C8790040001282E /* EmptyChallengeView.swift in Sources */,
+				30C6BB672C883CC60001282E /* EnumEmotion.swift in Sources */,
 				30C6BB4C2C8782030001282E /* OpenButtonView.swift in Sources */,
+				30C6BB6F2C88E8AA0001282E /* CompletedView.swift in Sources */,
+				30C6BB6B2C884BB30001282E /* ChallengeView.swift in Sources */,
 				30C6BB5D2C8792400001282E /* ChallengeCellView.swift in Sources */,
 				30C6BB3F2C87319B0001282E /* CustomProgressBar.swift in Sources */,
 				30C6BB632C8799570001282E /* AddChallengeView.swift in Sources */,
 				30C6BB582C8789A70001282E /* ChallengesViewModel.swift in Sources */,
 				30C6BB2E2C872EEC0001282E /* _08App.swift in Sources */,
 				30C6BB452C8738810001282E /* IntroView.swift in Sources */,
+				30C6BB692C8843CE0001282E /* EmotionChooseButton.swift in Sources */,
+				30C6BB6D2C88D3DC0001282E /* ChallengesDayGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

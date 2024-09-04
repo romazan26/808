@@ -12,6 +12,7 @@ struct MainView: View {
     @StateObject var challengesVM = ChallengesViewModel()
     
     @State var isPresentChalleng = false
+    @State var isPresentBadges = false
     var body: some View {
         ZStack {
             //MARK: - BackGround
@@ -72,7 +73,7 @@ struct MainView: View {
                         Text("Badges")
                             .foregroundStyle(.white)
                             .font(.system(size: 17, weight: .bold))
-                        Button(action: {}, label: {
+                        Button(action: {isPresentBadges.toggle()}, label: {
                             OpenButtonView()
                         })
                     }
@@ -99,7 +100,7 @@ struct MainView: View {
                 .padding()
                 .background {Color.second.cornerRadius(20)}
                 
-                //MARK: - Diary
+                //MARK: - Settings
                 HStack{
                     Image(.settings)
                         .resizable()
@@ -118,8 +119,12 @@ struct MainView: View {
                 .background {Color.second.cornerRadius(20)}
             }.padding()
         }
+        //MARK: - Sheets
         .fullScreenCover(isPresented: $isPresentChalleng, content: {
             ChallengesView(vm: challengesVM, isPresentChalleges: $isPresentChalleng)
+        })
+        .fullScreenCover(isPresented: $isPresentBadges, content: {
+            BadgesView()
         })
     }
 }

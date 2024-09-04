@@ -14,6 +14,7 @@ struct ChallengesView: View {
         ZStack {
             //MARK: - Background
             Color.main.ignoresSafeArea()
+            
             //MARK: - Main stack
             VStack {
                 //MARK: - top toolbar
@@ -33,24 +34,38 @@ struct ChallengesView: View {
                     
                     Spacer()
                 }
+                
+                //MARK: - Challenges list
                 if vm.challenges.isEmpty {
                     EmptyChallengeView()
                         .padding(.top)
                 }else{
-                    ForEach(vm.challenges) { challenge in
-                        ChallengeCellView(challenge: challenge)
+                    ScrollView {
+                        ForEach(vm.challenges) { challenge in
+                            Button(action: {
+                                vm.simpleChellenge = challenge
+                                vm.isPresentChallenge.toggle()
+                            }, label: {
+                                ChallengeCellView(challenge: challenge)
+                            })
+                        }
                     }
                 }
                 Spacer()
                 
+                //MARK: - Add challenge buttton
                 Button {
                     vm.isPresentAddChallenge.toggle()
                 } label: {
-                    BlueButtonView(text: "Add new challenge")
+                    BlueButtonView(text: "Add new challenge", image: "plus.circle")
                 }
 
             }.padding()
         }
+        //MARK: - sheets
+        .fullScreenCover(isPresented: $vm.isPresentChallenge, content: {
+            ChallengeView(vm: vm)
+        })
         .sheet(isPresented: $vm.isPresentAddChallenge, content: {
             AddChallengeView(vm: vm)
         })
