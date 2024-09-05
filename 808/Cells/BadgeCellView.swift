@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct BadgeCellView: View {
+    
     let badge: Badges
+    @StateObject var vm: BadgeViewModel
+    
     var body: some View {
         VStack {
             //MARK: - Image
-            Image(badge.compImage)
+            Image(vm.badges.first?.countCompleted ?? 0 >= badge.countComleted ? badge.compImage : badge.noCompImage)
                 .resizable()
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
             
@@ -22,7 +25,10 @@ struct BadgeCellView: View {
                 .font(.system(size: 13))
             
             //MARK: - Info button
-            Button(action: {}, label: {
+            Button(action: {
+                vm.isPresentInfo.toggle()
+                vm.simpleBadge = badge
+            }, label: {
                 Text("Info")
                     .foregroundStyle(.white)
                     .font(.system(size: 15))
@@ -33,6 +39,9 @@ struct BadgeCellView: View {
                     }
             })
         }
+        .sheet(isPresented: $vm.isPresentInfo) {
+            BadgeInfoView(vm: vm)
+        }
         .frame(maxWidth: .infinity)
         .padding()
         .background {
@@ -42,5 +51,5 @@ struct BadgeCellView: View {
 }
 
 #Preview {
-    BadgeCellView(badge: Badges.first)
+    BadgeCellView(badge: Badges.first, vm: BadgeViewModel())
 }

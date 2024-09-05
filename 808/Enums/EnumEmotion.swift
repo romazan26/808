@@ -29,3 +29,27 @@ enum Emotion{
         }
     }
 }
+
+enum EmotionNotes:CaseIterable, Identifiable{
+    case heart
+    case smile
+    case sad
+    case cry
+    
+    var image: ImageResource {
+        switch self{
+        
+        case .heart:
+                .heart
+        case .smile:
+                .smile
+        case .sad:
+                .sad
+        case .cry:
+                .cry
+        }
+    }
+    var id: Self{
+        self
+    }
+}

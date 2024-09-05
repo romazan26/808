@@ -18,9 +18,21 @@ struct AddChallengeView: View {
             //MARK: - Main stack
             VStack {
                 //MARK: Title view
-                Text("New challenge")
-                    .foregroundStyle(.white)
+                HStack {
+                    Button(action: {vm.isPresentAddChallenge = false}, label: {
+                        Image(.closeButton)
+                            .resizable()
+                            .frame(width: 32, height: 32)
+                    })
+                    
+                        
+                    Spacer()
+                    Text("New challenge")
+                        .foregroundStyle(.white)
                     .font(.system(size: 17, weight: .bold))
+                    .padding(.trailing, 27)
+                    Spacer()
+                }
                 
                 //MARK: - Name challenge
                 VStack(alignment: .leading){

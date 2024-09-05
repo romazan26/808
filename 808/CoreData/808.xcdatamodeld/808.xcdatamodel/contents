@@ -4,9 +4,15 @@
         <attribute name="countCompleted" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Challeng" representedClassName="Challeng" syncable="YES">
+        <attribute name="comleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="day" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="dayEnd" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="emotion" attributeType="Transformable" valueTransformerName="UIImageTransformer" customClassName="UIImage"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES">
+        <attribute name="descriptionNote" optional="YES" attributeType="String"/>
+        <attribute name="emotion" optional="YES" attributeType="Transformable" valueTransformerName="UIImageTransformer" customClassName="UIImage"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
 </model>

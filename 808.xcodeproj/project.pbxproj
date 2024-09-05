@@ -36,6 +36,23 @@
 		30C6BB722C88F0990001282E /* BadgesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB712C88F0990001282E /* BadgesView.swift */; };
 		30C6BB752C88F1C60001282E /* Badges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB742C88F1C60001282E /* Badges.swift */; };
 		30C6BB772C88FF9A0001282E /* BadgeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB762C88FF9A0001282E /* BadgeCellView.swift */; };
+		30C6BB792C899A020001282E /* BadgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB782C899A020001282E /* BadgeViewModel.swift */; };
+		30C6BB7B2C89A1510001282E /* BadgeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB7A2C89A1510001282E /* BadgeInfoView.swift */; };
+		30C6BB7E2C89AD530001282E /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB7D2C89AD530001282E /* DiaryView.swift */; };
+		30C6BB802C89B1270001282E /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB7F2C89B1270001282E /* NotesViewModel.swift */; };
+		30C6BB822C89B4940001282E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB812C89B4940001282E /* Note.swift */; };
+		30C6BB842C89C1CA0001282E /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB832C89C1CA0001282E /* NotesView.swift */; };
+		30C6BB862C89C3740001282E /* NoteCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB852C89C3740001282E /* NoteCellView.swift */; };
+		30C6BB882C89C5CF0001282E /* EmptyNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB872C89C5CF0001282E /* EmptyNotes.swift */; };
+		30C6BB8A2C89C6490001282E /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB892C89C6490001282E /* StatisticsView.swift */; };
+		30C6BB8C2C89CF620001282E /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB8B2C89CF620001282E /* AddNoteView.swift */; };
+		30C6BB8E2C89D1C30001282E /* MultiLineTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB8D2C89D1C30001282E /* MultiLineTF.swift */; };
+		30C6BB912C8A1DAE0001282E /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB902C8A1DAE0001282E /* NoteView.swift */; };
+		30C6BB932C8A27FE0001282E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB922C8A27FE0001282E /* ProgressCircleView.swift */; };
+		30C6BB962C8A43210001282E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB952C8A43210001282E /* SettingsView.swift */; };
+		30C6BB982C8A434F0001282E /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB972C8A434F0001282E /* SettingButton.swift */; };
+		30C6BB9B2C8A43FD0001282E /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB992C8A43FD0001282E /* WebViewPage.swift */; };
+		30C6BB9C2C8A43FD0001282E /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6BB9A2C8A43FD0001282E /* webView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +86,23 @@
 		30C6BB712C88F0990001282E /* BadgesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgesView.swift; sourceTree = "<group>"; };
 		30C6BB742C88F1C60001282E /* Badges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badges.swift; sourceTree = "<group>"; };
 		30C6BB762C88FF9A0001282E /* BadgeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCellView.swift; sourceTree = "<group>"; };
+		30C6BB782C899A020001282E /* BadgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeViewModel.swift; sourceTree = "<group>"; };
+		30C6BB7A2C89A1510001282E /* BadgeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeInfoView.swift; sourceTree = "<group>"; };
+		30C6BB7D2C89AD530001282E /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		30C6BB7F2C89B1270001282E /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		30C6BB812C89B4940001282E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		30C6BB832C89C1CA0001282E /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		30C6BB852C89C3740001282E /* NoteCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellView.swift; sourceTree = "<group>"; };
+		30C6BB872C89C5CF0001282E /* EmptyNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyNotes.swift; sourceTree = "<group>"; };
+		30C6BB892C89C6490001282E /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		30C6BB8B2C89CF620001282E /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		30C6BB8D2C89D1C30001282E /* MultiLineTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineTF.swift; sourceTree = "<group>"; };
+		30C6BB902C8A1DAE0001282E /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		30C6BB922C8A27FE0001282E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		30C6BB952C8A43210001282E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		30C6BB972C8A434F0001282E /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
+		30C6BB992C8A43FD0001282E /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
+		30C6BB9A2C8A43FD0001282E /* webView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +159,8 @@
 		30C6BB3B2C872F0F0001282E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30C6BB942C8A430D0001282E /* Settings */,
+				30C6BB7C2C89ACD00001282E /* Diary */,
 				30C6BB702C88F07A0001282E /* Badges */,
 				30C6BB4D2C87854A0001282E /* Challenges */,
 				30C6BB482C8738EF0001282E /* Main */,
@@ -147,6 +183,7 @@
 		30C6BB3D2C8731820001282E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				30C6BB8D2C89D1C30001282E /* MultiLineTF.swift */,
 				30C6BB3E2C87319B0001282E /* CustomProgressBar.swift */,
 				30C6BB462C8738BE0001282E /* BlueButtonView.swift */,
 				30C6BB4B2C8782030001282E /* OpenButtonView.swift */,
@@ -154,6 +191,9 @@
 				30C6BB642C8834780001282E /* ChooseDayButtonView.swift */,
 				30C6BB682C8843CE0001282E /* EmotionChooseButton.swift */,
 				30C6BB6C2C88D3DC0001282E /* ChallengesDayGridView.swift */,
+				30C6BB872C89C5CF0001282E /* EmptyNotes.swift */,
+				30C6BB922C8A27FE0001282E /* ProgressCircleView.swift */,
+				30C6BB972C8A434F0001282E /* SettingButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -184,6 +224,7 @@
 				30C6BB5E2C8794720001282E /* UIImageTransformer.swift */,
 				30C6BB542C8789590001282E /* CoreDataManager.swift */,
 				30C6BB602C87949A0001282E /* Challeng.swift */,
+				30C6BB812C89B4940001282E /* Note.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -192,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				30C6BB572C8789A70001282E /* ChallengesViewModel.swift */,
+				30C6BB782C899A020001282E /* BadgeViewModel.swift */,
+				30C6BB7F2C89B1270001282E /* NotesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -201,6 +244,7 @@
 			children = (
 				30C6BB5C2C8792400001282E /* ChallengeCellView.swift */,
 				30C6BB762C88FF9A0001282E /* BadgeCellView.swift */,
+				30C6BB852C89C3740001282E /* NoteCellView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -209,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				30C6BB712C88F0990001282E /* BadgesView.swift */,
+				30C6BB7A2C89A1510001282E /* BadgeInfoView.swift */,
 			);
 			path = Badges;
 			sourceTree = "<group>";
@@ -220,6 +265,36 @@
 				30C6BB742C88F1C60001282E /* Badges.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		30C6BB7C2C89ACD00001282E /* Diary */ = {
+			isa = PBXGroup;
+			children = (
+				30C6BB8F2C8A1D950001282E /* Note */,
+				30C6BB7D2C89AD530001282E /* DiaryView.swift */,
+				30C6BB892C89C6490001282E /* StatisticsView.swift */,
+			);
+			path = Diary;
+			sourceTree = "<group>";
+		};
+		30C6BB8F2C8A1D950001282E /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				30C6BB832C89C1CA0001282E /* NotesView.swift */,
+				30C6BB8B2C89CF620001282E /* AddNoteView.swift */,
+				30C6BB902C8A1DAE0001282E /* NoteView.swift */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		30C6BB942C8A430D0001282E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				30C6BB9A2C8A43FD0001282E /* webView.swift */,
+				30C6BB992C8A43FD0001282E /* WebViewPage.swift */,
+				30C6BB952C8A43210001282E /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,27 +369,44 @@
 			files = (
 				30C6BB4F2C87856B0001282E /* ChallengesView.swift in Sources */,
 				30C6BB752C88F1C60001282E /* Badges.swift in Sources */,
+				30C6BB792C899A020001282E /* BadgeViewModel.swift in Sources */,
+				30C6BB802C89B1270001282E /* NotesViewModel.swift in Sources */,
 				30C6BB442C8738810001282E /* PageIntroView.swift in Sources */,
+				30C6BB962C8A43210001282E /* SettingsView.swift in Sources */,
 				30C6BB612C87949A0001282E /* Challeng.swift in Sources */,
 				30C6BB722C88F0990001282E /* BadgesView.swift in Sources */,
 				30C6BB4A2C8738FA0001282E /* MainView.swift in Sources */,
+				30C6BB8C2C89CF620001282E /* AddNoteView.swift in Sources */,
 				30C6BB302C872EEC0001282E /* LoadingView.swift in Sources */,
 				30C6BB532C87885B0001282E /* 808.xcdatamodeld in Sources */,
 				30C6BB772C88FF9A0001282E /* BadgeCellView.swift in Sources */,
 				30C6BB652C8834780001282E /* ChooseDayButtonView.swift in Sources */,
 				30C6BB472C8738BE0001282E /* BlueButtonView.swift in Sources */,
+				30C6BB8A2C89C6490001282E /* StatisticsView.swift in Sources */,
 				30C6BB552C8789590001282E /* CoreDataManager.swift in Sources */,
 				30C6BB5F2C8794720001282E /* UIImageTransformer.swift in Sources */,
 				30C6BB432C8738810001282E /* PageIntroModel.swift in Sources */,
+				30C6BB7B2C89A1510001282E /* BadgeInfoView.swift in Sources */,
+				30C6BB842C89C1CA0001282E /* NotesView.swift in Sources */,
 				30C6BB5A2C8790040001282E /* EmptyChallengeView.swift in Sources */,
+				30C6BB932C8A27FE0001282E /* ProgressCircleView.swift in Sources */,
 				30C6BB672C883CC60001282E /* EnumEmotion.swift in Sources */,
 				30C6BB4C2C8782030001282E /* OpenButtonView.swift in Sources */,
+				30C6BB912C8A1DAE0001282E /* NoteView.swift in Sources */,
+				30C6BB982C8A434F0001282E /* SettingButton.swift in Sources */,
 				30C6BB6F2C88E8AA0001282E /* CompletedView.swift in Sources */,
+				30C6BB7E2C89AD530001282E /* DiaryView.swift in Sources */,
+				30C6BB9C2C8A43FD0001282E /* webView.swift in Sources */,
 				30C6BB6B2C884BB30001282E /* ChallengeView.swift in Sources */,
+				30C6BB882C89C5CF0001282E /* EmptyNotes.swift in Sources */,
 				30C6BB5D2C8792400001282E /* ChallengeCellView.swift in Sources */,
 				30C6BB3F2C87319B0001282E /* CustomProgressBar.swift in Sources */,
+				30C6BB9B2C8A43FD0001282E /* WebViewPage.swift in Sources */,
+				30C6BB8E2C89D1C30001282E /* MultiLineTF.swift in Sources */,
 				30C6BB632C8799570001282E /* AddChallengeView.swift in Sources */,
 				30C6BB582C8789A70001282E /* ChallengesViewModel.swift in Sources */,
+				30C6BB862C89C3740001282E /* NoteCellView.swift in Sources */,
+				30C6BB822C89B4940001282E /* Note.swift in Sources */,
 				30C6BB2E2C872EEC0001282E /* _08App.swift in Sources */,
 				30C6BB452C8738810001282E /* IntroView.swift in Sources */,
 				30C6BB692C8843CE0001282E /* EmotionChooseButton.swift in Sources */,

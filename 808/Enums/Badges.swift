@@ -16,6 +16,23 @@ enum Badges: CaseIterable, Identifiable {
     case experienced
     case conqueror
     
+    var countComleted: Int16 {
+        switch self{
+            
+        case .first:
+            1
+        case .five:
+            5
+        case .middle:
+            10
+        case .firteenth:
+            15
+        case .experienced:
+            20
+        case .conqueror:
+            25
+        }
+    }
     
     var name: String{
         switch self {

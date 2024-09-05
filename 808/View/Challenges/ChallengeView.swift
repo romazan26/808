@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChallengeView: View {
     @StateObject var vm: ChallengesViewModel
+    @StateObject var vmBadge = BadgeViewModel()
     var body: some View {
         ZStack {
             //MARK: - Background
@@ -78,6 +79,9 @@ struct ChallengeView: View {
                     Button(action: {
                         if vm.isEdit{
                             vm.saveEdit()
+                            if vm.cheackWin(){
+                                vmBadge.oneMoreComleted()
+                            }
                             
                         }else{ vm.editMode()}
                     }, label: {

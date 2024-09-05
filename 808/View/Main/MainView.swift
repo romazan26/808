@@ -10,9 +10,11 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject var challengesVM = ChallengesViewModel()
+    @StateObject var badgeVM = BadgeViewModel()
     
     @State var isPresentChalleng = false
     @State var isPresentBadges = false
+    @State var isPresentDiary = false
     var body: some View {
         ZStack {
             //MARK: - BackGround
@@ -37,7 +39,7 @@ struct MainView: View {
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.gray)
                     
-                    Button(action: {}, label: {
+                    Button(action: {challengesVM.isPresentAddChallenge.toggle()}, label: {
                         BlueButtonView(text: "Start")
                             .frame(width: 244)
                     })
@@ -92,7 +94,7 @@ struct MainView: View {
                         .font(.system(size: 17, weight: .bold))
                     
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {isPresentDiary.toggle()}, label: {
                         OpenButtonView()
                     })
                 }
@@ -120,11 +122,17 @@ struct MainView: View {
             }.padding()
         }
         //MARK: - Sheets
+        .fullScreenCover(isPresented: $isPresentDiary, content: {
+            DiaryView()
+        })
+        .sheet(isPresented: $challengesVM.isPresentAddChallenge, content: {
+            AddChallengeView(vm: challengesVM)
+        })
         .fullScreenCover(isPresented: $isPresentChalleng, content: {
             ChallengesView(vm: challengesVM, isPresentChalleges: $isPresentChalleng)
         })
         .fullScreenCover(isPresented: $isPresentBadges, content: {
-            BadgesView()
+            BadgesView(vm: badgeVM, isPresentBadges: $isPresentBadges)
         })
     }
 }

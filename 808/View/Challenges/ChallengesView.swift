@@ -55,7 +55,7 @@ struct ChallengesView: View {
                 
                 //MARK: - Add challenge buttton
                 Button {
-                    vm.isPresentAddChallenge.toggle()
+                    vm.isPresentAddChallenge = true
                 } label: {
                     BlueButtonView(text: "Add new challenge", image: "plus.circle")
                 }
@@ -65,9 +65,6 @@ struct ChallengesView: View {
         //MARK: - sheets
         .fullScreenCover(isPresented: $vm.isPresentChallenge, content: {
             ChallengeView(vm: vm)
-        })
-        .sheet(isPresented: $vm.isPresentAddChallenge, content: {
-            AddChallengeView(vm: vm)
         })
     }
 }

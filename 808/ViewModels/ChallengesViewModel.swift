@@ -15,6 +15,7 @@ final class ChallengesViewModel: ObservableObject{
     
     @Published var challenges: [Challeng] = []
     @Published var simpleChellenge: Challeng!
+    @Published var completedChallenges: [Challeng] = []
     
     @Published var simpleName = ""
     @Published var simpleDay = "10"
@@ -30,11 +31,26 @@ final class ChallengesViewModel: ObservableObject{
     
     init(){
         getChallenges()
+        getCompleted()
+    }
+    
+    func getCompleted(){
+        completedChallenges.removeAll()
+        getChallenges()
+        for challenge in challenges {
+            if challenge.comleted{
+                completedChallenges.append(challenge)
+            }
+        }
     }
     
     //MARK: - Cheack winnew
     func cheackWin() -> Bool{
         if simpleChellenge.day == simpleChellenge.dayEnd{
+            DispatchQueue.main.async {
+                self.completedChallenge()
+            }
+            
             return true
         }else {
             return false
@@ -66,6 +82,22 @@ final class ChallengesViewModel: ObservableObject{
     }
     
     //MARK: - Edit data
+    func completedChallenge(){
+        let request = NSFetchRequest<Challeng>(entityName: "Challeng")
+        
+        do{
+            challenges = try manager.context.fetch(request)
+            let challenge = challenges.first(where: {$0.id == simpleChellenge.id})
+            challenge?.comleted = true
+        }catch let error {
+            print("Error fetch coreData: \(error.localizedDescription)")
+        }
+        save()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+            self.getCompleted()
+        }
+        
+    }
     
     func restartChallenge(){
         let request = NSFetchRequest<Challeng>(entityName: "Challeng")
@@ -74,6 +106,7 @@ final class ChallengesViewModel: ObservableObject{
             challenges = try manager.context.fetch(request)
             let challenge = challenges.first(where: {$0.id == simpleChellenge.id})
             challenge?.dayEnd = 0
+            challenge?.comleted = false
         }catch let error {
             print("Error fetch coreData: \(error.localizedDescription)")
         }
