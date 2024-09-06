@@ -18,7 +18,7 @@ struct ChallengeCellView: View {
                 .foregroundStyle(.white)
                 .font(.system(size: 17, weight: .bold))
             if challenge.day != 0 {
-                CustomProgressBar(progress: Float(100 / challenge.day * challenge.dayEnd),
+                CustomProgressBar(progress: Float(challenge.dayEnd) / Float(challenge.day) * 100,
                                   width: 300,
                                   color: .green,
                                   secondColor: .gray.opacity(0.5))

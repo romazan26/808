@@ -15,6 +15,10 @@ struct SettingsView: View {
     @State private var isPresentPolicy = false
     @State var urlShare = "https://www.apple.com/app-store/"
     
+    @StateObject var vmChallenge: ChallengesViewModel
+    @StateObject var vmNote = NotesViewModel()
+    @StateObject var vmBadge = BadgeViewModel()
+    
     var body: some View {
         ZStack {
             Color.main.ignoresSafeArea()
@@ -64,7 +68,12 @@ struct SettingsView: View {
                 })
                 
                 //MARK: - Reset button
-                Button(action: {}, label: {
+                Button(action: {
+                    vmNote.deleteAll()
+                    vmBadge.deleteAll()
+                    vmChallenge.delleteAll()
+                    dismiss()
+                }, label: {
                     SettingButton(text: "Reset progress",
                                   text2: "Reset",
                                   imageName: "trash.square.fill",
@@ -84,7 +93,7 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView( vmChallenge: ChallengesViewModel())
 }
 
 struct ShareSheet: UIViewControllerRepresentable{
@@ -99,6 +108,4 @@ struct ShareSheet: UIViewControllerRepresentable{
 }
 
 
-#Preview {
-    SettingsView()
-}
+

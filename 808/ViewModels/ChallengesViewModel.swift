@@ -44,6 +44,7 @@ final class ChallengesViewModel: ObservableObject{
         }
     }
     
+    
     //MARK: - Cheack winnew
     func cheackWin() -> Bool{
         if simpleChellenge.day == simpleChellenge.dayEnd{
@@ -66,6 +67,14 @@ final class ChallengesViewModel: ObservableObject{
         
         save()
         clear()
+    }
+    
+    func delleteAll(){
+        getChallenges()
+        for challenge in challenges {
+            manager.context.delete(challenge)
+        }
+        save()
     }
     
     //MARK: - Save edit to challenge

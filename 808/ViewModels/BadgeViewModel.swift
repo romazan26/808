@@ -21,6 +21,19 @@ final class BadgeViewModel: ObservableObject{
         if badges.isEmpty {addBadges()}
     }
     
+    func getDayAfterStrart() -> Int{
+        let dateDiff = Calendar.current.dateComponents([.day], from: badges.first?.dayStart ?? Date(), to: Date()).day ?? 0
+        return dateDiff
+    }
+    
+    //MARK: - Delete
+    func deleteAll(){
+        for badge in badges {
+            manager.context.delete(badge)
+        }
+        save()
+    }
+    
     //MARK: - getCountBadge
     func countBadge() -> Int{
         var count = 0
@@ -61,6 +74,7 @@ final class BadgeViewModel: ObservableObject{
     func addBadges(){
         let newbadge = Badge(context: manager.context)
         newbadge.countCompleted = 0
+        newbadge.dayStart = Date()
         save()
     }
     

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddNoteView: View {
     @StateObject var vm: NotesViewModel
+    @FocusState private var keyboardIsFocused: Bool
     var body: some View {
         ZStack {
             Color.main.ignoresSafeArea()
@@ -28,6 +29,7 @@ struct AddNoteView: View {
                     .font(.system(size: 20, weight: .bold))
                     .padding(.top, 30)
                 MultiLineTF(txt: $vm.simpleTitle, placehold: "Text")
+                    .focused($keyboardIsFocused)
                     .frame(height: 58)
                     .background {
                         Color.second.cornerRadius(20)
@@ -38,6 +40,7 @@ struct AddNoteView: View {
                     .foregroundStyle(.white)
                     .font(.system(size: 20, weight: .bold))
                 MultiLineTF(txt: $vm.simpleDescription, placehold: "Text")
+                    .focused($keyboardIsFocused)
                     .frame(height: 142)
                     .background {
                         Color.second.cornerRadius(20)
@@ -73,6 +76,8 @@ struct AddNoteView: View {
                 }).disabled(vm.simpleTitle.isEmpty ? true : false)
                 
             }.padding()
+        }.onTapGesture {
+            keyboardIsFocused = false
         }
     }
 }

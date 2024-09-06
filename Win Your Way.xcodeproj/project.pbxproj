@@ -56,7 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30C6BB2A2C872EEC0001282E /* 808.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 808.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C6BB2A2C872EEC0001282E /* Win Your Way.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Win Your Way.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C6BB2D2C872EEC0001282E /* _08App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _08App.swift; sourceTree = "<group>"; };
 		30C6BB2F2C872EEC0001282E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		30C6BB312C872EEE0001282E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		30C6BB2B2C872EEC0001282E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30C6BB2A2C872EEC0001282E /* 808.app */,
+				30C6BB2A2C872EEC0001282E /* Win Your Way.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30C6BB292C872EEC0001282E /* 808 */ = {
+		30C6BB292C872EEC0001282E /* Win Your Way */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "808" */;
+			buildConfigurationList = 30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "Win Your Way" */;
 			buildPhases = (
 				30C6BB262C872EEC0001282E /* Sources */,
 				30C6BB272C872EEC0001282E /* Frameworks */,
@@ -312,9 +312,9 @@
 			);
 			dependencies = (
 			);
-			name = 808;
+			name = "Win Your Way";
 			productName = 808;
-			productReference = 30C6BB2A2C872EEC0001282E /* 808.app */;
+			productReference = 30C6BB2A2C872EEC0001282E /* Win Your Way.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +332,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "808" */;
+			buildConfigurationList = 30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "Win Your Way" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -345,7 +345,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30C6BB292C872EEC0001282E /* 808 */,
+				30C6BB292C872EEC0001282E /* Win Your Way */,
 			);
 		};
 /* End PBXProject section */
@@ -550,8 +550,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -565,7 +564,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -583,8 +582,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,14 +596,14 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "808" */ = {
+		30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "Win Your Way" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30C6BB362C872EEE0001282E /* Debug */,
@@ -614,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "808" */ = {
+		30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "Win Your Way" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30C6BB392C872EEE0001282E /* Debug */,

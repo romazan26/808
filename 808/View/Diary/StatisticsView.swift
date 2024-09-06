@@ -19,7 +19,7 @@ struct StatisticsView: View {
             VStack {
                 //MARK: - Day challenge
                 VStack {
-                    Text("1089")
+                    Text("\(vmBadges.getDayAfterStrart())")
                         .foregroundStyle(.white)
                         .font(.system(size: 28, weight: .bold))
                     Text("days in the challenge")

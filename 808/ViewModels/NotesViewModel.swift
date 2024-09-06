@@ -61,6 +61,13 @@ final class NotesViewModel: ObservableObject{
         save()
     }
     
+    func deleteAll(){
+        for note in notes {
+            manager.context.delete(note)
+        }
+        save()
+    }
+    
     //MARK: - Add data
     func addNote(){
         let newNote = Note(context: manager.context)

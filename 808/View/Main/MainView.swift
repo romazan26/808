@@ -15,6 +15,7 @@ struct MainView: View {
     @State var isPresentChalleng = false
     @State var isPresentBadges = false
     @State var isPresentDiary = false
+    @State var isPresentSettings = false
     var body: some View {
         ZStack {
             //MARK: - BackGround
@@ -112,7 +113,7 @@ struct MainView: View {
                         .font(.system(size: 17, weight: .bold))
                     
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {isPresentSettings.toggle()}, label: {
                         OpenButtonView()
                     })
                 }
@@ -122,6 +123,9 @@ struct MainView: View {
             }.padding()
         }
         //MARK: - Sheets
+        .fullScreenCover(isPresented: $isPresentSettings, content: {
+            SettingsView( vmChallenge: challengesVM)
+        })
         .fullScreenCover(isPresented: $isPresentDiary, content: {
             DiaryView()
         })

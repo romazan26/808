@@ -67,12 +67,13 @@ struct ChallengeView: View {
                         CustomProgressBar(progress: 100 / 30 * Float(vm.simpleChellenge.dayEnd), width: 350, color: .blueApp, secondColor: .grayApp)
                     }
                    
-                    
-                    //MARK: - Grid comleted day
-                    if vm.isEdit {
-                        ChallengesDayGridView(dayEnd: Int16(vm.simpleDayOff * Float(vm.simpleChellenge.day)))
-                    }else{
-                        ChallengesDayGridView(dayEnd: vm.simpleChellenge.dayEnd)
+                    ScrollView{
+                        //MARK: - Grid comleted day
+                        if vm.isEdit {
+                            ChallengesDayGridView(dayEnd: Int16(vm.simpleDayOff * Float(vm.simpleChellenge.day)))
+                        }else{
+                            ChallengesDayGridView(dayEnd: vm.simpleChellenge.dayEnd)
+                        }
                     }
                     
                     //MARK: - Save button
