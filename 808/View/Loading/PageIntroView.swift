@@ -9,27 +9,26 @@ import SwiftUI
 
 struct PageIntroView: View {
     var page: PageIntro
+    
     var body: some View {
-        VStack {
-            Text(page.description)
-                .foregroundStyle(.white)
-                .font(.system(size: 28, weight: .heavy))
-            
-            ZStack {
-                Circle()
-                    .foregroundStyle(.blueApp)
-                    .blur(radius: 70)
-                Image(page.imageUrl)
-                    .resizable()
-                .scaledToFit()
-            }
+
+           
+            VStack {
+                Text(page.description)
+                    .foregroundStyle(.white)
+                    .font(.system(size: 28, weight: .heavy))
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .lineLimit(/*@START_MENU_TOKEN@*/2/*@END_MENU_TOKEN@*/)
+                    .offset(y: -30)
+   
+                    Image(page.imageUrl)
+                        .resizable()
+                    .scaledToFit()
+                        
                 
-            
-            
-            
-            
-            
-        }
+            }.offset(y: 40)
+        
     }
 }
 

@@ -87,7 +87,7 @@ struct SettingsView: View {
             ShareSheet(items: urlShare )
         })
         .sheet(isPresented: $isPresentPolicy, content: {
-            WebViewPage(urlString: URL(string: "https://google.com")!)
+            WebViewPage(urlString: URL(string:"https://www.termsfeed.com/live/d9cee471-0f2c-419a-ba2d-b5923c4ac56e")!)
         })
     }
 }

@@ -14,12 +14,15 @@ struct IntroView: View {
     @State private var pageIndex = 0
     @Environment(\.dismiss) var dismiss
     
+    private let startColor: Color = .start
+    private let endColor: Color = .end
+    
     private let pages: [PageIntro] = PageIntro.sampalePages
     private let dotAppearance = UIPageControl.appearance()
     
     var body: some View {
         ZStack {
-            Color.main.ignoresSafeArea()
+            LinearGradient(colors: [startColor, endColor, startColor], startPoint: .bottom, endPoint: .top).ignoresSafeArea()
             VStack {
                 HStack{
                     
@@ -38,21 +41,21 @@ struct IntroView: View {
                 .padding()
                 ZStack(alignment: Alignment(horizontal: .leading, vertical: .bottom)) {
                     
-                        TabView(selection: $pageIndex,
-                                content:  {
-                            ForEach(pages) { page in
-                                PageIntroView(page: page)
-                                    .tag(page.tag)
-                            }
-                        })
-                        .fullScreenCover(isPresented: $isPresented, content: {
-                            MainView()
-                        })
-                        .ignoresSafeArea()
-                        .animation(.easeInOut, value: pageIndex)
-                        .tabViewStyle(.page(indexDisplayMode: .never))
-                        .indexViewStyle(.page(backgroundDisplayMode: .interactive))
-                        
+                    TabView(selection: $pageIndex,
+                            content:  {
+                        ForEach(pages) { page in
+                            PageIntroView(page: page)
+                                .tag(page.tag)
+                        }
+                    })
+                    .fullScreenCover(isPresented: $isPresented, content: {
+                        MainView()
+                    })
+                    .ignoresSafeArea()
+                    .animation(.easeInOut, value: pageIndex)
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .indexViewStyle(.page(backgroundDisplayMode: .interactive))
+                    
                 }.offset(y: 10.0)
                 //MARK: - Navigation Button
                 Button(action: {
@@ -63,13 +66,18 @@ struct IntroView: View {
                     }
                     
                 }, label: {
-                BlueButtonView()
+                    BlueButtonView()
                 })
-                .padding(.horizontal)
-                   
+                .padding(20)
+                .background {
+                    Color.black
+                        .cornerRadius(20)
+                        .ignoresSafeArea()
                 }
-
-               
+                
+            }
+            
+            
             
         }
     }

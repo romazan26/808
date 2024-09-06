@@ -24,13 +24,13 @@ struct ChallengesDayGridView: View {
             //MARK: - Empty rectangle grid
             LazyVGrid(columns: columns, content: {
                 ForEach(0...29, id: \.self) { index in
-                    Color(.grayApp)
+                    Color(.main)
                         .cornerRadius(6)
                         .frame(width: 56, height: 56)
-//                        .overlay {
-//                            RoundedRectangle(cornerRadius: 6)
-//                                .stroke(.grayApp, lineWidth: 2.0)
-//                        }
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 6)
+                                .stroke(.grayApp, lineWidth: 2.0)
+                        }
                 }
             })
             

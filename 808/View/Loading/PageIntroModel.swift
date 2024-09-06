@@ -13,11 +13,11 @@ struct PageIntro: Identifiable,Equatable {
     var imageUrl: String
     var tag: Int
 
-    static var samplePage = PageIntro(description: "Stop challenging yourself every day!", imageUrl: "intro1", tag: 0)
+    static var samplePage = PageIntro(description: "Analyze your success with our statistics", imageUrl: "intro1", tag: 0)
     
     static var sampalePages: [PageIntro] = [
-        PageIntro(description: "Stop challenging yourself every day!", imageUrl: "intro1", tag: 0),
-        PageIntro(description: "Track your progress and reach new heights!", imageUrl: "intro2", tag: 1),
-        PageIntro(description: "Get badges for achieving results!", imageUrl: "intro3", tag: 2)
+        PageIntro(description: "Analyze your success with our statistics", imageUrl: "intro1", tag: 0),
+        PageIntro(description: "Fix your thoughts and edit!", imageUrl: "intro2", tag: 1),
+        PageIntro(description: "All achievements in one place", imageUrl: "intro3", tag: 2)
     ]
 }

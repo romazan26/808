@@ -56,7 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30C6BB2A2C872EEC0001282E /* Win Your Way.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Win Your Way.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30C6BB2A2C872EEC0001282E /* Win challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Win challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C6BB2D2C872EEC0001282E /* _08App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _08App.swift; sourceTree = "<group>"; };
 		30C6BB2F2C872EEC0001282E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		30C6BB312C872EEE0001282E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		30C6BB2B2C872EEC0001282E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30C6BB2A2C872EEC0001282E /* Win Your Way.app */,
+				30C6BB2A2C872EEC0001282E /* Win challenge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,9 +300,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30C6BB292C872EEC0001282E /* Win Your Way */ = {
+		30C6BB292C872EEC0001282E /* Win challenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "Win Your Way" */;
+			buildConfigurationList = 30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "Win challenge" */;
 			buildPhases = (
 				30C6BB262C872EEC0001282E /* Sources */,
 				30C6BB272C872EEC0001282E /* Frameworks */,
@@ -312,9 +312,9 @@
 			);
 			dependencies = (
 			);
-			name = "Win Your Way";
+			name = "Win challenge";
 			productName = 808;
-			productReference = 30C6BB2A2C872EEC0001282E /* Win Your Way.app */;
+			productReference = 30C6BB2A2C872EEC0001282E /* Win challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +332,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "Win Your Way" */;
+			buildConfigurationList = 30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "Win challenge" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -345,7 +345,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30C6BB292C872EEC0001282E /* Win Your Way */,
+				30C6BB292C872EEC0001282E /* Win challenge */,
 			);
 		};
 /* End PBXProject section */
@@ -550,7 +550,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,7 +582,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,7 +603,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "Win Your Way" */ = {
+		30C6BB252C872EEC0001282E /* Build configuration list for PBXProject "Win challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30C6BB362C872EEE0001282E /* Debug */,
@@ -612,7 +612,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "Win Your Way" */ = {
+		30C6BB382C872EEE0001282E /* Build configuration list for PBXNativeTarget "Win challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30C6BB392C872EEE0001282E /* Debug */,
